@@ -1,15 +1,17 @@
-## 🏠💵 Precipitation_Prediction (Popular Machine Learning Models)
-With this comprehensive portfolio, I cordially invite you to explore the in-depth study conducted on the dynamics of house prices in King County, specifically in the vibrant city of Seattle.
-- Kernel - GitHub - House Price Prediction
+## 🌧️ Precipitation_Prediction (Popular Machine Learning Models)
+Welcome to the Rain Prediction Project! 
+This project aims to enhance rain prediction accuracy. It is essential to understand and improve decision-making based on weather conditions and make precipitation forecasting more reliable.
+
+- Kernel - GitHub - Precipidation Prediction
 
 ## ℹ️ Introduction
-![44771](https://github.com/Vivikt-573/House-Price-Prediction---Regression-Models/assets/148704966/87e87c0f-aef0-45e7-a527-c3310da0afc0)
+![26408](https://github.com/Vivikt-573/Precipitation_Prediction/assets/148704966/9f693904-9286-422f-94c8-1da725277fa4)
 Image Credits - https://www.freepik.com/author/brgfx - brgfx
-- The project revolves around a comprehensive analysis of house sale prices in King County, encompassing the city of Seattle, with a dataset spanning the period from May 2014 to May 2015. This analysis aims to gain insights into the factors influencing house prices and to develop predictive models for future price forecasts.
+- In this endeavor,a dedicated effort to harness the power of data and machine learning to enhance our ability to forecast rain. Rain prediction is not just a matter of convenience but a crucial aspect of various sectors, impacting agriculture, water resource management, and disaster preparedness. 
 
 ### 💾 Dataset
-- The Dataset is used from Kaggle - House Sales in King County, USA
-- To Download/Use - https://www.kaggle.com/datasets/harlfoxem/housesalesprediction/data
+- The Dataset is used from Kaggle - Rain in Australia
+- To Download/Use - [https://www.kaggle.com/datasets/harlfoxem/housesalesprediction/data](https://www.kaggle.com/datasets/jsphyg/weather-dataset-rattle-package)
 
 ### 📚🛠️ Libraries/Tools
 - Python
@@ -24,50 +26,73 @@ Image Credits - https://www.freepik.com/author/brgfx - brgfx
 
 ### 👨🏻‍💻 Workflow
 The project follows a systematic methodology, which includes data cleaning, exploratory data analysis, feature engineering, and machine learning modeling etc,To obtain a precise visual representation, please refer to the flowchart provided below. 
-![image](https://github.com/Vivikt-573/House-Price-Prediction---Regression-Models/assets/148704966/38f391c1-be3f-4ab0-9bf1-f979521e3bc6)
-
+![image](https://github.com/Vivikt-573/Precipitation_Prediction/assets/148704966/12d43bf1-9545-4137-b178-84de31b9ee7b)
 
 
 ## 🎯 Aim
 
-The primary aim of this project is to understand and predict house prices in King County. By leveraging various features of the dataset, we seek to uncover patterns and relationships that impact property values. This understanding will enable us to construct predictive models to estimate house prices, which can be invaluable for both buyers and sellers in the real estate market.
+The primary aim of this project is to create a robust machine learning model that can forecast whether it will rain tomorrow based on a set of relevant weather features. By achieving this, we aim to provide a valuable tool for improving rain prediction accuracy and aiding in decision-making processes dependent on weather conditions.
 
 
 ## 📌 Objective
 
-- Explore the dataset to gain a thorough understanding of the available features and their relationships with house prices.
-- Perform data quality checks, handle missing values, duplicates, and outliers to ensure the dataset's integrity.
-- Conduct exploratory data analysis (EDA) to visualize data patterns, correlations, and distributions.
-- Provide valuable insights and recommendations for stakeholders in the real estate market.
+- To collect and preprocess historical weather data containing features like temperature, wind speed, humidity, and rainfall.
+- To design and train a machine learning model capable of accurately predicting rain for the following day.
+- To evaluate the model's performance using appropriate metrics such as accuracy, precision, recall, and the area under the ROC curve (AUC-ROC).
+- To provide insights into the significance of different weather parameters in rain prediction.
+- To offer recommendations for further improvements in precipitation forecasting.
 
 
 ## 🧑‍🔬 Scope and Methodology
 
-- Engineer relevant features and transform data to prepare it for modeling.
-- Evaluate model performance using appropriate metrics and techniques.
-- Implement cross-validation and hyper-parameter tuning for improved model accuracy.
-- Implement multiple regression models, including Linear, Ridge, and Lasso, to predict house prices.
+- This project focuses on developing a predictive model for rain prediction with the aim of achieving accurate and reliable results.
+- The scope encompasses data collection, preprocessing, feature selection, model development, and performance evaluation.
+- The model's applicability extends to various regions and locations, making it a valuable tool for meteorologists, agricultural experts, and other stakeholders reliant on precipitation forecasts.
+
 
 ## ✔️📊 Results and Discussion
 
-**Positive Impact on Price:**
-1. Features such as 'sqft_living,' 'grade,' 'sqft_above,' 'sqft_basement,' 'view,' 'waterfront,' 'lat,' and 'sqft_living15' have positive coefficients in all three models.
-2. This indicates that an increase in these features tends to result in a higher predicted price for the property.
-  
-**Negative Impact on Price:**
-1. Features like 'bedrooms,' 'yr_built,' 'long,' 'sqft_lot,' 'zipcode,' and 'sqft_lot15' have negative coefficients in all three models.
-2. This means that an increase in these features is associated with a lower predicted price for the property.
-  
-**Comparison of Models:**
-1. The magnitude of coefficients may vary between models. For example, 'sqft_living' has the highest positive coefficient in all three models, but the values differ slightly. Lasso regression, due to its feature selection property, sets some coefficients to zero. In this case, it sets zipcode,sqft_basement,' 'sqft_lot,' and 'long' coefficients to zero, indicating that these features are not essential in predicting the price.
-  
-**Effect of Regularization:**
-1. Ridge and Lasso regression introduce regularization to the model. This is reflected in the Ridge and Lasso coefficients, which are slightly smaller than the Linear coefficients for most features.
-2. Regularization helps prevent overfitting and can make the model more robust.
-  
-**Feature Importance:**
-1. 'lat' and 'sqft_living' appear to be among the most influential features, with high positive coefficients in all three models.
-2. 'sqft_basement' is essentially eliminated in the Lasso model, suggesting it has a limited impact on the price.
-3. The 'yr_renovated' feature has relatively small coefficients in all models, indicating it may not be a strong predictor of price.
+**Accuracy:**
 
+Random Forest has the highest accuracy on the test set (85.02%), followed closely by XG Boost (85.02%).
+Decision Tree and Gradient Boost have similar test accuracies, with Decision Tree at 83.27% and Gradient Boost at 84.60%.
+AdaBoost has the lowest test accuracy at 84.10%.
+Best: Random Forest and XG Boost (for accuracy).
+
+**AUC-ROC Score:**
+
+Gradient Boost and XG Boost have the highest AUC-ROC scores (0.73), indicating good discrimination between classes.
+Random Forest and Decision Tree have AUC-ROC scores of 0.72, suggesting a slightly lower ability to discriminate.
+AdaBoost has the lowest AUC-ROC score at 0.71.
+Best: Gradient Boost and XG Boost (for AUC-ROC score).
+
+**Precision:**
+
+Random Forest has the highest precision for class 0 (no rain) at 0.86, indicating few false positives.
+Gradient Boost and XG Boost have the second-highest precision for class 0 at 0.87.
+AdaBoost and Decision Tree also have relatively high precision for class 0.
+Precision for class 1 (rain) varies, with XG Boost having the highest at 0.74.
+Best: Random Forest (for precision in class 0), XG Boost (for precision in class 1).
+
+**Recall:**
+
+Random Forest has the highest recall for class 0 (no rain) at 0.95, indicating a good ability to capture actual no-rain instances.
+XG Boost and Gradient Boost have the second-highest recall for class 0 at 0.94 and 0.95, respectively.
+All models exhibit varying levels of recall for class 1 (rain), with XG Boost and Gradient Boost having the highest values at 0.51.
+Best: Random Forest (for recall in class 0), XG Boost and Gradient Boost (for recall in class 1).
+
+**F1-Score:**
+
+The F1-scores are highest for class 0 in Random Forest (0.91) and XG Boost (0.91).
+For class 1, XG Boost has the highest F1-score at 0.61.
+Decision Tree has the lowest F1-scores for both classes, indicating a balance between precision and recall.
+Best: Random Forest (for F1-score in class 0), XG Boost (for F1-score in class 1).
+
+**Computational Time (Wall Time):**
+
+Decision Tree is the fastest to train and test (55.2 seconds), followed by AdaBoost (8 minutes and 8 seconds).
+Random Forest, XG Boost, and Gradient Boost are computationally intensive, with the longest training and testing times:
+Random Forest (8 minutes and 3 seconds)
+XG Boost (6 minutes and 37 seconds)
+Gradient Boost (14 minutes and 41 seconds).
 
