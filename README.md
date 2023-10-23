@@ -68,41 +68,41 @@ The primary aim of this project is to create a robust machine learning model tha
 
 **Precision:**
 
-Random Forest has the highest precision for class 0 (no rain) at 0.86, indicating few false positives.
-Gradient Boost and XG Boost have the second-highest precision for class 0 at 0.87.
-AdaBoost and Decision Tree also have relatively high precision for class 0.
-Precision for class 1 (rain) varies, with XG Boost having the highest at 0.74.
-Best: Random Forest (for precision in class 0), XG Boost (for precision in class 1).
+- Random Forest has the highest precision for class 0 (no rain) at 0.86, indicating few false positives.
+- Gradient Boost and XG Boost have the second-highest precision for class 0 at 0.87.
+- AdaBoost and Decision Tree also have relatively high precision for class 0.
+- Precision for class 1 (rain) varies, with XG Boost having the highest at 0.74.
+- Best: Random Forest (for precision in class 0), XG Boost (for precision in class 1).
 
 **Recall:**
 
-Random Forest has the highest recall for class 0 (no rain) at 0.95, indicating a good ability to capture actual no-rain instances.
-XG Boost and Gradient Boost have the second-highest recall for class 0 at 0.94 and 0.95, respectively.
-All models exhibit varying levels of recall for class 1 (rain), with XG Boost and Gradient Boost having the highest values at 0.51.
-Best: Random Forest (for recall in class 0), XG Boost and Gradient Boost (for recall in class 1).
+- Random Forest has the highest recall for class 0 (no rain) at 0.95, indicating a good ability to capture actual no-rain instances.
+- XG Boost and Gradient Boost have the second-highest recall for class 0 at 0.94 and 0.95, respectively.
+- All models exhibit varying levels of recall for class 1 (rain), with XG Boost and Gradient Boost having the highest values at 0.51.
+- Best: Random Forest (for recall in class 0), XG Boost and Gradient Boost (for recall in class 1).
 
 **F1-Score:**
 
-The F1-scores are highest for class 0 in Random Forest (0.91) and XG Boost (0.91).
-For class 1, XG Boost has the highest F1-score at 0.61.
-Decision Tree has the lowest F1-scores for both classes, indicating a balance between precision and recall.
-Best: Random Forest (for F1-score in class 0), XG Boost (for F1-score in class 1).
+- The F1-scores are highest for class 0 in Random Forest (0.91) and XG Boost (0.91).
+- For class 1, XG Boost has the highest F1-score at 0.61.
+- Decision Tree has the lowest F1-scores for both classes, indicating a balance between precision and recall.
+- Best: Random Forest (for F1-score in class 0), XG Boost (for F1-score in class 1).
 
 **Computational Time (Wall Time):**
 
-Decision Tree is the fastest to train and test (55.2 seconds), followed by AdaBoost (8 minutes and 8 seconds).
-Random Forest, XG Boost, and Gradient Boost are computationally intensive, with the longest training and testing times:
-Random Forest (8 minutes and 3 seconds)
-XG Boost (6 minutes and 37 seconds)
-Gradient Boost (14 minutes and 41 seconds).
+- Decision Tree is the fastest to train and test (55.2 seconds), followed by AdaBoost (8 minutes and 8 seconds).
+- Random Forest, XG Boost, and Gradient Boost are computationally intensive, with the longest training and testing times:
+- Random Forest (8 minutes and 3 seconds)
+- XG Boost (6 minutes and 37 seconds)
+- Gradient Boost (14 minutes and 41 seconds).
 
 **Final Summary**
 
-If prioritize accuracy, Random Forest and XG Boost are the top performers.
-If prioritize AUC-ROC score, Gradient Boost and XG Boost are strong choices.
-For precision and recall in class 0, Random Forest and XG Boost stand out.
-For precision in class 1, XG Boost performs well.
-For recall in class 1, XG Boost and Gradient Boost are competitive.
-If there is need to balance computational efficiency and performance, Decision Tree is the fastest, but Random Forest and XG Boost are also viable options.
+- If prioritize accuracy, Random Forest and XG Boost are the top performers.
+- If prioritize AUC-ROC score, Gradient Boost and XG Boost are strong choices.
+- For precision and recall in class 0, Random Forest and XG Boost stand out.
+- For precision in class 1, XG Boost performs well.
+- For recall in class 1, XG Boost and Gradient Boost are competitive.
+- If there is need to balance computational efficiency and performance, Decision Tree is the fastest, but Random Forest and XG Boost are also viable options.
 **In this context, XG Boost emerges as the leading choice, excelling in performance.**
 
