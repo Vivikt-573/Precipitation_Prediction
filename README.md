@@ -54,17 +54,17 @@ The primary aim of this project is to create a robust machine learning model tha
 
 **Accuracy:**
 
-Random Forest has the highest accuracy on the test set (85.02%), followed closely by XG Boost (85.02%).
-Decision Tree and Gradient Boost have similar test accuracies, with Decision Tree at 83.27% and Gradient Boost at 84.60%.
-AdaBoost has the lowest test accuracy at 84.10%.
-Best: Random Forest and XG Boost (for accuracy).
+- Random Forest has the highest accuracy on the test set (85.02%), followed closely by XG Boost (85.02%).
+- Decision Tree and Gradient Boost have similar test accuracies, with Decision Tree at 83.27% and Gradient Boost at 84.60%.
+- AdaBoost has the lowest test accuracy at 84.10%.
+- Best: Random Forest and XG Boost (for accuracy).
 
 **AUC-ROC Score:**
 
-Gradient Boost and XG Boost have the highest AUC-ROC scores (0.73), indicating good discrimination between classes.
-Random Forest and Decision Tree have AUC-ROC scores of 0.72, suggesting a slightly lower ability to discriminate.
-AdaBoost has the lowest AUC-ROC score at 0.71.
-Best: Gradient Boost and XG Boost (for AUC-ROC score).
+- Gradient Boost and XG Boost have the highest AUC-ROC scores (0.73), indicating good discrimination between classes.
+- Random Forest and Decision Tree have AUC-ROC scores of 0.72, suggesting a slightly lower ability to discriminate.
+- AdaBoost has the lowest AUC-ROC score at 0.71.
+- Best: Gradient Boost and XG Boost (for AUC-ROC score).
 
 **Precision:**
 
