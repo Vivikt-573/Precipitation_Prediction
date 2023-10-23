@@ -96,3 +96,13 @@ Random Forest (8 minutes and 3 seconds)
 XG Boost (6 minutes and 37 seconds)
 Gradient Boost (14 minutes and 41 seconds).
 
+**Final Summary**
+
+If prioritize accuracy, Random Forest and XG Boost are the top performers.
+If prioritize AUC-ROC score, Gradient Boost and XG Boost are strong choices.
+For precision and recall in class 0, Random Forest and XG Boost stand out.
+For precision in class 1, XG Boost performs well.
+For recall in class 1, XG Boost and Gradient Boost are competitive.
+If there is need to balance computational efficiency and performance, Decision Tree is the fastest, but Random Forest and XG Boost are also viable options.
+**In this context, XG Boost emerges as the leading choice, excelling in performance.**
+
